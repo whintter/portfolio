@@ -1,0 +1,234 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.jaldi-regular {
+  font-family: "Jaldi", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jaldi-bold {
+  font-family: "Jaldi", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.exo-fontclass {
+  font-family: "Exo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-mono-robotoclass {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.roboto-slab-slab {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;  
+              /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(255, 166, 0, 0);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 166, 0, 0);    /* color of the scroll thumb */
+  border-radius: 10px;       /* roundness of the scroll thumb */
+  border: 1px solid rgba(204, 147, 13, 0.334);  /* creates padding around scroll thumb */
+}
+header {
+  column-gap: 64px;
+  display: flex;
+  align-items: center;
+  padding-top: 1%;
+  margin-top: -1%;
+  height: 11vh;
+  border: 1px solid orange;
+  border-radius: 25px;
+  width: 100vw;
+}
+
+body {
+  color: white;
+  overflow-x: hidden;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #14161c;
+
+}
+
+/* area principal */
+.principal {
+  margin-top: 10%;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
+  width: 60vw;
+  height: 100vh;
+}
+
+#particles-js {
+  opacity: 0.25;
+  position: absolute;
+  top: -1%;
+  right: 0%;
+  z-index: -3;
+  width: 100%;
+  height: 100vh;
+}
+
+.menu {
+  margin-left: 12%;
+  display: flex;
+  list-style-type: none;
+  column-gap: 46px;
+}
+
+.nav_link:hover {
+  cursor: pointer;
+  color: orange;
+
+}
+.nav_link::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+
+  width: 60%;
+  height: 1px;
+  background:orange;
+
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s;
+}
+.nav_link:hover::after{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.nav_link {
+  position: relative;
+  align-self:right;
+  text-transform: uppercase;
+  font-family: "Roboto mono", serif;
+  font-weight: 400;
+  font-size:87%;
+  color: rgb(113, 113, 113);
+  text-decoration: none;
+}
+.logo{
+  margin-left: 10%;
+}
+.btn_mais:hover{
+  background-color: blueviolet;
+}
+.btn_mais{
+  transition: all 0.5s;
+  margin-top:42%;
+  align-self: center;
+  font-family: "Roboto Mono", monospace;
+  height:5.5%;
+  width: 15%;
+  border-radius: 13px;
+  background-color: rgba(255, 255, 255, 0);
+  border-color: blueviolet;
+  color: white
+}
+.mensagem{
+  margin-left: 8%;
+  width: 50%;
+
+  position: absolute;
+  font-family: "Roboto Mono", monospace;
+}
+.redes_sociais{
+  
+  display: flex;
+  flex-direction: row;
+  margin-left: 22%;
+  position: absolute;
+  margin-top: 17%;
+  column-gap: 30%;
+}
+#comand{
+  position: relative;
+  font-size: 20px;
+  color: rgba(255, 166, 0, 0.36);
+}
+#texto_principal{
+  border-left: 1px solid white;
+  padding-left: 3%;
+  margin-top: 3%;
+  position: relative;
+  font-family: "Exo", sans-serif;
+}
+#msg_hello{
+  overflow: hidden;
+  white-space: nowrap;
+  font-size:2.6rem;
+  padding-top: 1%;
+  display: block;
+  border-right: 3px solid white;
+  width: 28ch;
+  animation: mark 0.6s step-end infinite, write 4s steps(28,end);
+}
+@keyframes write {
+  0%{
+    width: 0;
+  }
+}
+@keyframes mark {
+  50%{
+    border-right-color: transparent;
+  }
+  
+}
+
+/* logos */
+.redes_sociais img{
+  transition: all 0.4s;
+
+}
+.redes_sociais img:hover {
+  opacity: 1;
+  transform: translateY(-5px);
+  cursor: pointer;
+
+}
+.logo_git{
+  opacity: 0.7;
+  width: 26%;
+  height: 26%;
+}
+.logo_linkedin{
+  opacity: 0.7;
+  width: 26%;
+  height: 26%;
+}
+.logo_insta{
+  opacity: 0.5;
+  margin-top: 3%;
+  width: 24%;
+  height: 24%;
+}
