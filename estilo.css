@@ -76,18 +76,28 @@ body {
 
 /* area principal */
 .principal {
-  margin-top: 10%;
+  
+  padding-top:10%;
   flex-wrap: nowrap;
   display: flex;
   flex-direction: column;
   align-self: center;
   justify-self: center;
   width: 60vw;
+  height: 91vh;
+}
+.principal::after{
+  inset: 0;
+  content: '';
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(#44454900,#14161c00,#14161c00,#14161c00,rgba(17, 17, 23, 0.374), rgba(17, 17, 23, 0.396),rgb(17, 17, 23));
+  width:100vw;
   height: 100vh;
 }
 
 #particles-js {
-  opacity: 0.25;
+  opacity: 0.35;
   position: absolute;
   top: -1%;
   right: 0%;
@@ -95,6 +105,7 @@ body {
   width: 100%;
   height: 100vh;
 }
+
 
 .menu {
   margin-left: 12%;
@@ -120,7 +131,7 @@ body {
 
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform 0.4s;
+  transition: transform 0.7s;
 }
 .nav_link:hover::after{
   transform: scaleX(1);
@@ -142,18 +153,20 @@ body {
 }
 .btn_mais:hover{
   background-color: blueviolet;
+  transform: translateY(-2px);
+  color: white;
 }
 .btn_mais{
-  transition: all 0.5s;
+  transition: all 0.8s;
   margin-top:42%;
   align-self: center;
   font-family: "Roboto Mono", monospace;
-  height:5.5%;
+  height:7.5%;
   width: 15%;
   border-radius: 13px;
   background-color: rgba(255, 255, 255, 0);
   border-color: blueviolet;
-  color: white
+  color: rgb(97, 97, 97)
 }
 .mensagem{
   margin-left: 8%;
@@ -184,12 +197,13 @@ body {
   font-family: "Exo", sans-serif;
 }
 #msg_hello{
+  
   overflow: hidden;
   white-space: nowrap;
   font-size:2.6rem;
   padding-top: 1%;
   display: block;
-  border-right: 3px solid white;
+  border-right: 3px solid rgb(255, 255, 255);
   width: 28ch;
   animation: mark 0.6s step-end infinite, write 4s steps(28,end);
 }
@@ -207,21 +221,26 @@ body {
 
 /* logos */
 .redes_sociais img{
-  transition: all 0.4s;
+  
+  transition: all 0.7s;
 
 }
 .redes_sociais img:hover {
+  filter: drop-shadow(0 0 4px #dbe8fb48);
   opacity: 1;
   transform: translateY(-5px);
   cursor: pointer;
+
 
 }
 .logo_git{
   opacity: 0.7;
   width: 26%;
   height: 26%;
+  
 }
 .logo_linkedin{
+
   opacity: 0.7;
   width: 26%;
   height: 26%;
@@ -231,4 +250,75 @@ body {
   margin-top: 3%;
   width: 24%;
   height: 24%;
+}
+
+.sobre-nos{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(17, 17, 23);
+}
+.hamburguer_menu{
+  display: none;
+}
+.link_menu_hamburguer{
+  display: none;
+}
+#menu_check{
+  display: none;
+}
+/* mobile responsividade */
+@media screen and (max-width:1024px){
+  header{
+    position: relative;
+    width: 110vw;
+    border: 0px;
+    border-bottom: 1px solid orange;
+    border-radius: 0px;
+    
+  }
+  
+  .logo{
+    margin-left: 17%;
+  }
+  .menu{
+    width: 0px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+  }
+  #menu_check{
+    
+    display: none;
+    
+   
+  }
+  .hamburguer_menu{
+    display: flex;
+    position: absolute;
+    right: 17%;
+    
+  
+  }
+  .link_menu_hamburguer{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    top:99%;
+    z-index: 3000;
+    width: 35%;
+    list-style-type: none;
+    position: absolute;
+    text-decoration: none;
+    right: 10%;
+    height: 115%;
+    background-color: #14161c;
+    border: 1px solid orange;
+    border-top: 0px;
+    row-gap: 10px;
+    padding-bottom: 30%;
+   
+  }
+  #menu_check:checked~.link_menu_hamburguer{
+    display: flex;
+  }  
 }
