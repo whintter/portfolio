@@ -337,7 +337,7 @@ body {
     
     display: flex;
     white-space: wrap;
-    width: 97vw;
+    width: 95vw;
     animation: none;
     overflow: visible;
     margin: 0px;
@@ -348,6 +348,7 @@ body {
     justify-self: left;
   }
   .redes_sociais{
+    
     position: absolute;
     margin: unset;
     margin-left: -18%;
