@@ -278,7 +278,7 @@ body {
   }
   header{
     position: relative;
-    width: 110vw;
+    width: 100vw;
     border: 0px;
     border-bottom: 1px solid orange;
     border-radius: 0px;
@@ -344,10 +344,18 @@ body {
     justify-self: left;
   }
   .redes_sociais{
+    position: absolute;
     margin: unset;
     padding: unset;
     display: flex;
     flex-direction: row;
     justify-self: center;
+    bottom: 20%;
+  }
+  .btn_mais{
+    position: absolute;
+    bottom: 10%;
+    width: 40%;
+    height: 6%;
   }
 }
