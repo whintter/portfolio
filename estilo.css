@@ -355,12 +355,12 @@ body {
     display: flex;
     flex-direction: row;
     align-self: center;
-    bottom: 35%;
+    bottom: 23vh;
 
   }
   .btn_mais{
     position: absolute;
-    bottom: 20%;
+    bottom: 11vh;
     width: 40%;
     height: 6%;
     align-self: center;
