@@ -366,6 +366,7 @@ body {
     align-self: center;
   }
   #texto_principal{
+    color: red;
     margin-top: 10%;
     margin-top: 15%;
     width:80vw;
