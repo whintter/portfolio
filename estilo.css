@@ -332,6 +332,7 @@ body {
     display: flex;
   }  
   .mensagem{    
+    margin-top: 7vh;
   }
   #msg_hello{
     
@@ -343,22 +344,20 @@ body {
     margin: 0px;
   }
   .principal{
-    margin-top: 10%;
+  
     width: 100vw;
-    justify-self: left;
+    position: relative  ;
+    
   }
   .redes_sociais{
-    
     position: absolute;
-    margin: unset;
-    margin-left: -18%;
-    padding: unset;
     display: flex;
     flex-direction: row;
     align-self: center;
+    justify-content: center;
+    margin: 0 auto;
     bottom: 23vh;
-
-  }
+}
   .btn_mais{
     position: absolute;
     bottom: 11vh;
