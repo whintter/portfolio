@@ -160,11 +160,11 @@ body {
 }
 .btn_mais{
   transition: all 0.8s;
-  margin-top:42%;
+  margin-top:17vh;
   align-self: center;
   font-family: "Roboto Mono", monospace;
-  height:7.5%;
-  width: 15%;
+  height:5.3vh;
+  width: 8vw;
   border-radius: 13px;
   background-color: rgba(255, 255, 255, 0);
   border-color: blueviolet;
@@ -173,17 +173,22 @@ body {
 .mensagem{
   margin-left: 8%;
   width: 50%;
-
+  position: absolute;
   position: absolute;
   font-family: "Roboto Mono", monospace;
 }
-.redes_sociais{
+.secundario{
+  margin-top: 35vh;
+  align-self: center;  
+  display: flex;
+  justify-content: center;
   
+}
+.redes_sociais{
+  margin-right: 5vw;
   display: flex;
   flex-direction: row;
-  margin-left: 22%;
   position: absolute;
-  margin-top: 17%;
   column-gap: 30%;
 }
 #comand{
@@ -320,7 +325,7 @@ body {
     position: absolute;
     text-decoration: none;
     right: 10%;
-    height: 115%;
+    height: 20vh;
     background-color: #14161c;
     border: 1px solid orange;
     border-top: 0px;
@@ -349,21 +354,18 @@ body {
     position: relative  ;
     
   }
+  .secundario{
+    margin-top: 98%;
+  }
   .redes_sociais{
-    position: absolute;
     display: flex;
     flex-direction: row;
-    align-self: center;
-    justify-content: center;
-    margin: 0 auto;
-    bottom: 23vh;
 }
   .btn_mais{
-    position: absolute;
-    bottom: 11vh;
-    width: 40%;
-    height: 6%;
-    align-self: center;
+    width: 34vw;
+    height: 6vh;
+    margin-top: 15vh;
+   
   }
   #texto_principal{
     color: red;
