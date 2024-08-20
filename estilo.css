@@ -350,7 +350,8 @@ body {
   .secundario{
     margin-top: 98%;
   }
-  .redes_sociais{
+  .redes_sociais{ 
+    background-color: red ;
     display: flex;
     flex-direction: row;
 }
