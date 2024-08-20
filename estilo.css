@@ -351,9 +351,11 @@ body {
     margin-top: 98%;
   }
   .redes_sociais{ 
-    background-color: red ;
+
     display: flex;
     flex-direction: row;
+    width: fit-content;
+    column-gap: 10vw;
 }
   .btn_mais{
     width: 34vw;
@@ -362,11 +364,32 @@ body {
    
   }
   #texto_principal{
-    color: rgb(233, 12, 167);
+    color: rgb(233, 233, 12);
     margin-top: 10%;
     margin-top: 15%;
     width:80vw;
     height: 13vh;
     overflow: hidden;
+  }
+  .logo_git{
+    opacity: 0.7;
+    width: 12vw;
+    height: 12vw;
+   
+    
+  }
+  .logo_linkedin{
+  
+    opacity: 0.7;
+    width: 12vw;
+    height: 12vw;
+   
+  }
+  .logo_insta{
+    opacity: 0.5;
+    margin-top: 3%;
+    width: 11vw;
+    height: 11vw;
+    
   }
 }
